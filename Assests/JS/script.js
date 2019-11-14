@@ -32,4 +32,7 @@
       gameDiv.append(p);
   }
   });
-  
+  // Parallax
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
