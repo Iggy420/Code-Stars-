@@ -15,5 +15,5 @@ section{
 }
 section .content{
     max-width: 1000px;
-    margin: 0; auto;
+    margin: auto;
 }
