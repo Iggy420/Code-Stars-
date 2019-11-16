@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
 
     //Games Live ajax request and response (Rapid API - NBA API Documentation)
     var settings = {
@@ -15,21 +15,28 @@
     $.ajax(settings).done(function (response) {
       console.log(response)
 
-      // //.map function
-      var games = response.api.games;
+    var games = response.api.games;
 
       for (var i = 0; i < games.length; i++) {
-        $(".hometeam").append("<h1>" + "Home Team Name : " + response.api.games[i].hTeam.shortName + "</h1>");
-        $(".awayteam").append("<h1>" + "Away Team Name : " + response.api.games[i].vTeam.shortName + "</h1>");
-        $(".gametime").append("<h1>" + "Time : " + response.api.games[i].clock + "</h1>");
-        $(".quarter").append("<h1>" + "Quarter : " + response.api.games[i].currentPeriod + "</h1>");
-        $(".homescore").append("<h1>" + "Home Team Score : " + response.api.games[i].hTeam.score.points + "</h1>")
-        $(".awayscore").append("<h1>" + "Away Team Score : " + response.api.games[i].vTeam.score.points + "</h1>")
-        $("#homelogo").attr("src", response.api.games[i].hTeam.logo)
-        $("#awaylogo").attr("src", response.api.games[i].vTeam.logo)
+        $(".carousel").append(`
+        <div class="carousel-item blue white-text" href="#four!">
+        <h3>${games[i].hTeam.shortName}</h3>
+        <h3>${games[i].vTeam.shortName}</h3>
+        <h3>${games[i].clock}</h3>
+        <h3>${games[i].currentPeriod}</h3>
+        <h3>${games[i].hTeam.score.points}</h3>
+        <h3>${games[i].vTeam.score.points}</h3>
+        <img src="${games[i].hTeam.logo}">
+        <img src="${games[i].vTeam.logo}">
+      </div>
+        `)
       }
+
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+      });
 
     });
 
-
-  
+})
