@@ -17,6 +17,14 @@ $(document).ready(function(){
 
     var games = response.api.games;
 
+    if ( games == 0) {
+      $(".carousel").append(`
+        <img src="Assests\Images\image.png" class = "nbaLogo">
+      `)
+      console.log("hello")
+    }
+
+    else {
       for (var i = 0; i < games.length; i++) {
         $(".carousel").append(`
         <div class="carousel-item blue white-text" href="#four!">
@@ -26,11 +34,13 @@ $(document).ready(function(){
         <h3>${games[i].currentPeriod}</h3>
         <h3>${games[i].hTeam.score.points}</h3>
         <h3>${games[i].vTeam.score.points}</h3>
-        <img src="${games[i].hTeam.logo}" class= "teamLogo">
-        <img src="${games[i].vTeam.logo}" class= "teamLogo">
+        <div><img src="${games[i].hTeam.logo}" class= "teamLogo"></div>
+        <div><img src="${games[i].vTeam.logo}" class= "teamLogo"></div>
+        
       </div>
         `)
       }
+    }
 
       $('.carousel.carousel-slider').carousel({
         fullWidth: true,
