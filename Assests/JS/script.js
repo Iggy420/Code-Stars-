@@ -26,8 +26,8 @@ $(document).ready(function(){
         <h3>${games[i].currentPeriod}</h3>
         <h3>${games[i].hTeam.score.points}</h3>
         <h3>${games[i].vTeam.score.points}</h3>
-        <img src="${games[i].hTeam.logo}">
-        <img src="${games[i].vTeam.logo}">
+        <img src="${games[i].hTeam.logo}" class= "teamLogo">
+        <img src="${games[i].vTeam.logo}" class= "teamLogo">
       </div>
         `)
       }

@@ -17,3 +17,7 @@ section .content{
     max-width: 1000px;
     margin: auto;
 }
+.teamLogo {
+    height: 200px;
+    width: 200px;
+}

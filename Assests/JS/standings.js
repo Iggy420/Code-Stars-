@@ -16,16 +16,22 @@ $(document).ready(function(){
                   console.log(response)
             
                 var teams = response.api.standings;
+                var teamNames = ["Orlando Magic", "Charlotte Hornets", "Miami Heat", "Washington Bullets", "Atlanta Hawks", "Toronto Raptors", "Philadelphia 76ers", "Boston Celtics", "Brooklyn Nets", "NY Knicks", "Milwaukee Bucks", "Indiana Pacers", "Detroit Pistons", "Chicago Bulls", "Cleveland Cavaliers", "Houston Rockets", "San Antonio Spurs", "Memphis Grizzlies", "New Orleans Pelicans", "Dallas Mavericks", "Golden State Worriors", "LA Clippers", "Sacramento Kings", "LA Lakers", "Phoenix Suns", "Denver Nuggets", "Portland Trailblazers", "Utah Jazz", "OKC Thunder", "Minnesota Timberwolves"];
+
+                console.log(teamNames)
             
                   for (var i = 0; i < teams.length; i++) {
                     $(".standings").append(`
                     <div>
-                    <h3>${teams[i].conference.name}</h3>
-                    <h3>${teams[i].conference.win}</h3>
-                    <h3>${teams[i].conference.loss}</h3>
-                    <h3>${teams[i].winPercentage}</h3
+                    <h3>Team Name/ID: ${teamNames[i]}<h3>
+                    <h3>Conference: ${teams[i].conference.name}</h3>
+                    <h3>Wins: ${teams[i].conference.win}</h3>
+                    <h3>Loses: ${teams[i].conference.loss}</h3>
+                    <h3>Win Percentage: ${teams[i].winPercentage}</h3>
+                    <br/>
                   </div>
-                    `)
+                    `
+                    )
                   }
             
 
