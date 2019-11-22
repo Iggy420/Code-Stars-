@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     if ( games == 0) {
       $(".carousel").append(`
-        <img src="..\Images\image.png" class = "nbaLogo">
+        <img src="Assests/Images/image.png" id="nbaLogo">
       `)
       console.log("hello")
     }

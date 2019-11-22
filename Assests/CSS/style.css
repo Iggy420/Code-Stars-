@@ -18,8 +18,8 @@ section .content{
     margin: auto;
 }
 .teamLogo {
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
 }
 
 #infoOne{
@@ -40,7 +40,7 @@ section .content{
 
 #infoFive{
     font-size: x-large;  
-    padding-top: 100px;  
+    padding-top: 70px;  
 }
 
 #infoSix{
@@ -61,4 +61,8 @@ section .content{
 
 .carousel{
     /* width: 80%; */
+}
+
+#nbaLogo{
+    height: 100%;
 }
