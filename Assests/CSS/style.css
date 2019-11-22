@@ -18,6 +18,51 @@ section .content{
     margin: auto;
 }
 .teamLogo {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+}
+
+#infoOne{
+    font-size: x-large;    
+}
+
+#infoTwo{
+    font-size: x-large;    
+}
+
+#infoThree{
+    font-size: x-large;    
+}
+
+#infoFour{
+    font-size: x-large;    
+}
+
+#infoFive{
+    font-size: x-large;  
+    padding-top: 70px;  
+}
+
+#infoSix{
+    font-size: x-large;    
+}
+
+#infoSeven{
+    font-size: x-large;    
+}
+
+#infoEight{
+    font-size: x-large;    
+}
+
+#infoNine{
+    font-size: x-large;    
+}
+
+.carousel{
+    /* width: 80%; */
+}
+
+#nbaLogo{
+    height: 100%;
 }
