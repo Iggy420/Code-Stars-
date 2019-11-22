@@ -11,6 +11,7 @@ $(document).ready(function(){
         "x-rapidapi-key": "2b1f9e6733msh22bb848a9641962p19a128jsn799dd10dfb90"
       }
     }
+    
 
     $.ajax(settings).done(function (response) {
       console.log(response)
@@ -54,6 +55,7 @@ $(document).ready(function(){
       </div>
         `)
       }
+    }
 
       $('.carousel.carousel-slider').carousel({
         fullWidth: true,
