@@ -46,6 +46,10 @@ $(document).ready(function(){
           <div class="col s2" id="infoEight">${games[i].clock}</div>
           <div class="col s5" id="infoNine">${games[i].vTeam.score.points}</div>
         </div>
+
+        <div class="row">
+        <div class="col s12" id="infoSeven">${moment().format('LLLL')}</div>
+        </div>
         
       </div>
         `)

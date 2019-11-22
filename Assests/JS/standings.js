@@ -74,11 +74,11 @@ $(document).ready(function(){
 
                 console.log(teamNames)
 
+
                 
             
                 for (var i = 0; i < teams.length; i++) {
 
-                 
                   $( teams[i].conference.name == "east" ? ".easternConference" : ".westernConference").append(`
                   <tr>
                   <td class="teamname">${teamNames[teams[i].teamId]}</td>
