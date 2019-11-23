@@ -59,10 +59,15 @@ section .content{
     font-size: x-large;    
 }
 
-.carousel{
-    /* width: 80%; */
-}
-
 #nbaLogo{
     height: 100%;
+}
+
+.backImage {
+    background-size: cover;
+    height: 20vh;  
+}
+
+.iframe{
+    float: center;
 }
